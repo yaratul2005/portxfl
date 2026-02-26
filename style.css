@@ -1417,6 +1417,20 @@ body.loaded .hero-image-wrapper {
         gap: 2rem;
     }
 
+    .decorative-frame {
+        padding: 1rem;
+    }
+
+    .frame-inner {
+        padding: 1.25rem;
+    }
+
+    .frame-content {
+        font-size: 0.75rem;
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
+
     /* Timeline Mobile */
     .timeline-line {
         left: 24px;
