@@ -97,6 +97,17 @@
                         <a href="#projects" class="btn btn-primary interactive">View My Work</a>
                         <a href="#contact" class="btn btn-outline interactive">Contact Me</a>
                     </div>
+                    <div class="hero-socials text-mono"
+                        style="margin-top: 2rem; display: flex; gap: 1.5rem; opacity: 0; animation: textUp 0.8s var(--ease-out-expo) 1.5s forwards;">
+                        <a href="https://www.facebook.com/yaratul2004/" target="_blank" class="interactive"
+                            style="color: var(--clr-text-muted); transition: color 0.3s;"
+                            onmouseover="this.style.color='var(--clr-accent)'"
+                            onmouseout="this.style.color='var(--clr-text-muted)'">Facebook</a>
+                        <a href="https://www.instagram.com/i.m.ratul" target="_blank" class="interactive"
+                            style="color: var(--clr-text-muted); transition: color 0.3s;"
+                            onmouseover="this.style.color='var(--clr-accent)'"
+                            onmouseout="this.style.color='var(--clr-text-muted)'">Instagram</a>
+                    </div>
                 </div>
                 <div class="hero-image-wrapper">
                     <img src="img/my image/myimg.png" alt="Yaser Ahmmed Ratul Profile" class="hero-image">
@@ -329,7 +340,8 @@
 
                 <div class="projects-grid">
                     <!-- Project 1 -->
-                    <div class="project-card interactive reveal-item" data-tilt>
+                    <div class="project-card interactive reveal-item" data-tilt
+                        onclick="window.open('https://great10.xyz', '_blank')">
                         <div class="project-content">
                             <div class="project-header">
                                 <span class="status-badge text-mono">🟢 Live</span>
@@ -344,26 +356,7 @@
                                 designed for scale.</p>
                         </div>
                         <div class="project-overlay">
-                            <button class="btn btn-primary view-btn">View Project</button>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="project-card interactive reveal-item delay-1" data-tilt>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <span class="status-badge text-mono">🟢 Active</span>
-                                <h3 class="project-title">Davida — Business Web Presence</h3>
-                            </div>
-                            <div class="project-tags text-mono">
-                                <span>WordPress</span><span>SEO</span><span>Meta Ads</span><span>Canva</span><span>Pixel
-                                    Tracking</span>
-                            </div>
-                            <p class="project-desc">End-to-end digital management for an eCommerce brand — from site
-                                development and SEO to Facebook/Instagram ad campaigns generating consistent leads.</p>
-                        </div>
-                        <div class="project-overlay">
-                            <button class="btn btn-primary view-btn">View Project</button>
+                            <button class="btn btn-primary view-btn">Visit great10.xyz</button>
                         </div>
                     </div>
                 </div>
@@ -480,14 +473,25 @@
                                 </div>
                             </div>
 
-                            <div class="contact-card glass-panel interactive copy-trigger"
-                                data-copy="Cantonment, Cumilla, Bangladesh">
-                                <div class="contact-icon">📍</div>
+                            <a href="https://www.facebook.com/yaratul2004/" target="_blank"
+                                class="contact-card glass-panel interactive"
+                                style="display: flex; text-decoration: none;">
+                                <div class="contact-icon">👤</div>
                                 <div class="contact-info">
-                                    <span class="contact-label text-mono">Location</span>
-                                    <span class="contact-value">Cantonment, Cumilla</span>
+                                    <span class="contact-label text-mono">Facebook</span>
+                                    <span class="contact-value text-accent">fb.com/yaratul2004</span>
                                 </div>
-                            </div>
+                            </a>
+
+                            <a href="https://www.instagram.com/i.m.ratul" target="_blank"
+                                class="contact-card glass-panel interactive"
+                                style="display: flex; text-decoration: none;">
+                                <div class="contact-icon">📸</div>
+                                <div class="contact-info">
+                                    <span class="contact-label text-mono">Instagram</span>
+                                    <span class="contact-value text-accent">@i.m.ratul</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
