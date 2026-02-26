@@ -389,8 +389,8 @@ function initContactForm() {
         };
 
         try {
-            // Note: Update this URL to matching deployed backend URL in production
-            const response = await fetch('http://localhost:5000/api/contact', {
+            // Updated to live production endpoint
+            const response = await fetch('https://yaratul.com/api/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
