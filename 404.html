@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found | Yaser Ahmmed Ratul</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6D3JZYC4LP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6D3JZYC4LP');
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .error-section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .error-code {
+            font-size: clamp(6rem, 15vw, 12rem);
+            font-family: var(--font-heading);
+            color: var(--clr-accent);
+            line-height: 1;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 30px rgba(201, 168, 76, 0.3);
+            opacity: 0;
+            animation: fadeInTop 1s var(--ease-out-expo) forwards;
+        }
+
+        .error-title {
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            animation: fadeInTop 1s var(--ease-out-expo) 0.2s forwards;
+        }
+
+        .error-desc {
+            color: var(--clr-text-muted);
+            max-width: 500px;
+            margin: 0 auto 3rem;
+            font-size: 1.1rem;
+            opacity: 0;
+            animation: fadeInTop 1s var(--ease-out-expo) 0.4s forwards;
+        }
+
+        .error-btn {
+            opacity: 0;
+            animation: fadeInTop 1s var(--ease-out-expo) 0.6s forwards;
+        }
+
+        @keyframes fadeInTop {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Noise Overlay -->
+    <div class="noise-overlay"></div>
+
+    <main class="content-wrapper">
+        <!-- NAVBAR -->
+        <header id="header" class="header scrolled">
+            <div class="container header-inner">
+                <a href="/" class="logo" style="opacity: 1; transform: none;">
+                    <span class="logo-text">YR</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- ERROR SECTION -->
+        <section class="error-section">
+            <div class="container relative z-10">
+                <div class="contact-bg-glow" style="width: 80vw; height: 80vw;"></div>
+                <h1 class="error-code">404</h1>
+                <h2 class="error-title">Page Not Found</h2>
+                <p class="error-desc text-mono">The link you followed may be broken, or the page may have been removed.
+                </p>
+                <div class="error-btn">
+                    <a href="/" class="btn btn-primary interactive">Return to Homepage</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Basic scripts for 404 page (Cursor & Noise)
+        const dot = document.querySelector('.cursor-dot');
+        const ring = document.querySelector('.cursor-ring');
+
+        window.addEventListener('mousemove', (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+
+            dot.style.left = `${posX}px`;
+            dot.style.top = `${posY}px`;
+
+            ring.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 100, fill: "forwards" });
+        });
+
+        document.querySelectorAll('.interactive').forEach(el => {
+            el.addEventListener('mouseenter', () => ring.classList.add('hover'));
+            el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
+        });
+    </script>
+</body>
+
+</html>

@@ -10,6 +10,15 @@
         content="Building digital experiences — from pixel-perfect WordPress sites to Python-powered backends.">
     <meta property="og:url" content="https://yaratul.com">
     <title>Yaser Ahmmed Ratul | Portfolio</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6D3JZYC4LP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6D3JZYC4LP');
+    </script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -99,14 +108,42 @@
                     </div>
                     <div class="hero-socials text-mono"
                         style="margin-top: 2rem; display: flex; gap: 1.5rem; opacity: 0; animation: textUp 0.8s var(--ease-out-expo) 1.5s forwards;">
+                        <a href="https://www.linkedin.com/in/yaratul2004/" target="_blank" class="interactive"
+                            style="color: var(--clr-text-muted); transition: color 0.3s;" aria-label="LinkedIn"
+                            onmouseover="this.style.color='var(--clr-accent)'"
+                            onmouseout="this.style.color='var(--clr-text-muted)'">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-linkedin">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
                         <a href="https://www.facebook.com/yaratul2004/" target="_blank" class="interactive"
-                            style="color: var(--clr-text-muted); transition: color 0.3s;"
+                            style="color: var(--clr-text-muted); transition: color 0.3s;" aria-label="Facebook"
                             onmouseover="this.style.color='var(--clr-accent)'"
-                            onmouseout="this.style.color='var(--clr-text-muted)'">Facebook</a>
+                            onmouseout="this.style.color='var(--clr-text-muted)'">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-facebook">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
                         <a href="https://www.instagram.com/i.m.ratul" target="_blank" class="interactive"
-                            style="color: var(--clr-text-muted); transition: color 0.3s;"
+                            style="color: var(--clr-text-muted); transition: color 0.3s;" aria-label="Instagram"
                             onmouseover="this.style.color='var(--clr-accent)'"
-                            onmouseout="this.style.color='var(--clr-text-muted)'">Instagram</a>
+                            onmouseout="this.style.color='var(--clr-text-muted)'">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-instagram">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="hero-image-wrapper">
@@ -473,10 +510,37 @@
                                 </div>
                             </div>
 
+                            <a href="https://www.linkedin.com/in/yaratul2004/" target="_blank"
+                                class="contact-card glass-panel interactive"
+                                style="display: flex; text-decoration: none;">
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-linkedin">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                        </path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                </div>
+                                <div class="contact-info">
+                                    <span class="contact-label text-mono">LinkedIn</span>
+                                    <span class="contact-value text-accent">in/yaratul2004</span>
+                                </div>
+                            </a>
+
                             <a href="https://www.facebook.com/yaratul2004/" target="_blank"
                                 class="contact-card glass-panel interactive"
                                 style="display: flex; text-decoration: none;">
-                                <div class="contact-icon">👤</div>
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-facebook">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                                        </path>
+                                    </svg>
+                                </div>
                                 <div class="contact-info">
                                     <span class="contact-label text-mono">Facebook</span>
                                     <span class="contact-value text-accent">fb.com/yaratul2004</span>
@@ -486,7 +550,15 @@
                             <a href="https://www.instagram.com/i.m.ratul" target="_blank"
                                 class="contact-card glass-panel interactive"
                                 style="display: flex; text-decoration: none;">
-                                <div class="contact-icon">📸</div>
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-instagram">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                </div>
                                 <div class="contact-info">
                                     <span class="contact-label text-mono">Instagram</span>
                                     <span class="contact-value text-accent">@i.m.ratul</span>
